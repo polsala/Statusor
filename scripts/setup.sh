@@ -4,7 +4,9 @@
 
 set -euo pipefail
 
-ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+SCRIPT_PATH="${BASH_SOURCE[0]:-$0}"
+SCRIPT_DIR="$(cd -- "$(dirname -- "$SCRIPT_PATH")" && pwd)"
+ROOT="$(cd -- "$SCRIPT_DIR/.." && pwd)"
 THEME_FILE="$ROOT/src/config/theme.config.ts"
 
 if [[ ! -f "$THEME_FILE" ]]; then
