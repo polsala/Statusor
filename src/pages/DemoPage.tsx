@@ -2,15 +2,15 @@ import GuidedTour from "../demo/GuidedTour";
 
 export function DemoPage() {
   const themeSnippet = `export const THEME = {
-  companyName: "Acme Cloud",
+  companyName: "Your Company",
   logoUrl: "/logo.svg",
   primaryColor: "#0f172a",
   accentColor: "#22c55e",
   darkModeDefault: true,
   links: {
-    website: "https://status.acme.com",
-    support: "mailto:support@acme.com",
-    docs: "https://docs.acme.com/status",
+    website: "https://status.statusor.invalid",
+    support: "mailto:support@statusor.invalid",
+    docs: "https://docs.statusor.invalid/status",
   },
 };`;
 
@@ -28,7 +28,7 @@ export function DemoPage() {
     group: "Security",
     adapter: "http_ping",
     adapterConfig: {
-      url: "https://auth.example.com/healthz",
+      url: "https://auth.statusor.invalid/healthz",
       expectedStatus: 200,
       timeoutMs: 4000,
     },

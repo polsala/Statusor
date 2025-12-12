@@ -1,6 +1,7 @@
 import type { CSSProperties } from "react";
 import { useMemo, useState } from "react";
 import StatusBadge from "../components/StatusBadge";
+import { THEME } from "../config/theme.config";
 import type { StatusLevel } from "../types/status";
 
 const tourSteps = [
@@ -46,10 +47,12 @@ export function GuidedTour() {
   const [activeStep, setActiveStep] = useState(tourSteps[0].id);
   const [demoStatus, setDemoStatus] = useState<StatusLevel>("operational");
   const [previewDark, setPreviewDark] = useState(true);
-  const [brandName, setBrandName] = useState("Acme Status Cloud");
-  const [tagline, setTagline] = useState("Enterprise status with transparency.");
-  const [primaryColor, setPrimaryColor] = useState("#2563eb");
-  const [accentColor, setAccentColor] = useState("#22c55e");
+  const [brandName, setBrandName] = useState(THEME.companyName || "Statusor Demo");
+  const [tagline, setTagline] = useState(
+    THEME.aboutPage?.title ?? "Enterprise status with transparency.",
+  );
+  const [primaryColor, setPrimaryColor] = useState(THEME.primaryColor || "#2563eb");
+  const [accentColor, setAccentColor] = useState(THEME.accentColor || "#22c55e");
   const [servicesPreview, setServicesPreview] = useState<
     { id: string; name: string; status: StatusLevel }[]
   >([

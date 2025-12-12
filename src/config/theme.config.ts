@@ -7,9 +7,9 @@ export const THEME = {
   accentColor: "#22c55e",
   darkModeDefault: true,
   links: {
-    website: "https://example.com",
-    support: "mailto:support@example.com",
-    docs: "https://docs.example.com",
+    website: "https://status.statusor.invalid",
+    support: "mailto:support@statusor.invalid",
+    docs: "https://docs.statusor.invalid",
   },
   aboutPage: {
     title: "About this status page",

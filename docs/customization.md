@@ -48,4 +48,4 @@ Notes:
 
 ## Deploying with branding intact
 - Branding lives in config files, so the built `dist/` folder is portable.
-- If hosting under a subdirectory (e.g., `https://status.example.com/app/`), set `BASE_PATH` during build: `BASE_PATH="/app/" npm run build`.
+- If hosting under a subdirectory (e.g., `https://status.statusor.invalid/app/`), set `BASE_PATH` during build: `BASE_PATH="/app/" npm run build`.

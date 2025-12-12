@@ -22,7 +22,7 @@ export const SERVICES = [
     name: "Authentication",
     adapter: "http_ping",
     adapterConfig: {
-      url: "https://auth.example.com/healthz",
+      url: "https://auth.statusor.invalid/healthz",
       expectedStatus: 200,      // optional, defaults to 200
       timeoutMs: 4000,          // optional, defaults to 5000
     },
@@ -71,7 +71,7 @@ Pings an HTTP endpoint and sets status based on the response code.
 ```ts
 adapter: "http_ping",
 adapterConfig: {
-  url: "https://api.example.com/healthz",
+  url: "https://api.statusor.invalid/healthz",
   expectedStatus: 200,  // treated as operational
   timeoutMs: 5000,      // abort after this many ms
 }
