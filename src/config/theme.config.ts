@@ -2,7 +2,7 @@ const BASE_PATH = import.meta.env.BASE_URL ?? "/";
 
 export const THEME = {
   companyName: "Example Corp",
-  logoUrl: `${BASE_PATH}logo.svg`,
+  logoUrl: "/logo.svg",
   primaryColor: "#2563eb",
   accentColor: "#22c55e",
   darkModeDefault: true,
@@ -14,8 +14,9 @@ export const THEME = {
   aboutPage: {
     title: "About this status page",
     body: `
-This status page provides real-time and historical information about the availability of Example Corp services.
-If you are experiencing an issue that is not reported here, please contact support.
+Status for Example Corp
     `,
   },
 };
+
+export default THEME;

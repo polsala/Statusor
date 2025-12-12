@@ -40,6 +40,7 @@ npm test
 ## Configuration
 - **Services**: Edit `src/config/status.config.ts` to add/update services and their adapters.
 - **Branding & Theme**: Adjust colors, logo, and copy in `src/config/theme.config.ts`.
+- **Interactive setup**: Run `bash scripts/setup.sh` for a guided terminal flow to update branding/links.
 
 ## Adapters
 Built-in adapters live in `src/adapters/`:
