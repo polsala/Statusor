@@ -1,0 +1,10 @@
+{
+  "snapshots": [
+    {
+      "serviceId": "auth",
+      "status": "degraded",
+      "updatedAt": "2023-12-10T11:30:00.000Z",
+      "uptimeLast30d": 99.8
+    }
+  ]
+}

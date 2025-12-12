@@ -1,0 +1,10 @@
+{
+  "snapshots": [
+    {
+      "serviceId": "api-core",
+      "status": "operational",
+      "updatedAt": "2023-12-10T12:05:00.000Z",
+      "uptimeLast30d": 99.97
+    }
+  ]
+}

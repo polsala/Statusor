@@ -1,0 +1,10 @@
+{
+  "snapshots": [
+    {
+      "serviceId": "webapp",
+      "status": "operational",
+      "updatedAt": "2023-12-10T12:00:00.000Z",
+      "uptimeLast30d": 99.95
+    }
+  ]
+}
